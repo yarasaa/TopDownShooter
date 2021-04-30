@@ -7,7 +7,9 @@ public class BulletBounce : MonoBehaviour
     public int bounceAmount=4;
     public float bounceMagnitude = 500;
     private Vector3 forceDirection;
-   
+    public GameObject particle;
+
+
     void Start()
     {
         
@@ -40,9 +42,15 @@ public class BulletBounce : MonoBehaviour
         if (bounceAmount == 0)
         {
             Destroy(gameObject);
+            Explode();
+            
         }
     }
 
+    void Explode()
+    {
+        Instantiate(particle, gameObject.transform.position, Quaternion.identity);
 
+    }
 
 }

@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class BulletExplosion : MonoBehaviour
 {
-    public ParticleSystem particle;
+    public GameObject particle;
     void Start()
     {
-        particle = GetComponent<ParticleSystem>();
+        
     }
 
     // Update is called once per frame
@@ -21,13 +21,17 @@ public class BulletExplosion : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Explode();
+            Destroy(gameObject);
         }
+
+        
     }
 
 
     void Explode()
     {
        Instantiate(particle,gameObject.transform.position, Quaternion.identity);
+        
     }
 
 }

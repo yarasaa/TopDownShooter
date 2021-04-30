@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2416448046825297395}
   - component: {fileID: 831619078145364591}
   - component: {fileID: 3315825418412925584}
-  - component: {fileID: 7237323850215234581}
+  - component: {fileID: 435152543645515244}
   m_Layer: 0
   m_Name: TempBullet
   m_TagString: Untagged
@@ -90,7 +90,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2600233435623067465}
-  m_Material: {fileID: 13400000, guid: 2c45e6a91c2343046854a9abb285eb85, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -125,8 +125,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bounceAmount: 8
-  bounceMagnitude: 500
---- !u!114 &7237323850215234581
+  bounceMagnitude: 1000
+  particle: {fileID: 7590345403148338866, guid: 2ff5ba246c662624d9b80beacbc50aa0,
+    type: 3}
+--- !u!114 &435152543645515244
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -138,5 +140,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72b16a62473d85144b8b7c74f6a9776c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particle: {fileID: 5563463131145154109, guid: ccbe1a77b93409d4a8796c060e27c137,
+  particle: {fileID: 7590345403148338866, guid: 2ff5ba246c662624d9b80beacbc50aa0,
     type: 3}
