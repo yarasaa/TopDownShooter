@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - GlowObject
+  - BounceObject
   layers:
   - Default
   - TransparentFX
